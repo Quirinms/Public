@@ -1,0 +1,35 @@
+Installation des GraphViz systems (derzeit Version 2.38)
+ACHTUNG nur auf WINDOWS Systemen  Schritt 2-3 ausfuehren!
+
+1.) GraphViz INSTALLIEREN:
+GraphViz findet sich unter
+D:\Subversion\PUB\98Rservice\graphviz-2.38.msi
+
+2) 
+Auf Windows Systemen den Command line editor starten und
+
+dot -V
+
+eingeben. Dies liefert die GraphViz-Version, die von der Kommandozeile (und damit von R) angesprochen wird.
+Wenn dieses nicht der installierten Version (also Version 2.3x.0) entspricht, bitte folgende Schritte durchführen:
+
+3)
+Die Environment Variable "Path" muss entsprechend den folgenden Anweisungen geändert werden:
+- Windows-Start-Button klicken
+- mit rechter Maustaste den PC-Namen klicken
+- Properties(oder "Eigenschaften", eventuell zusaetzlich "Erweiterte Systemeinstellungen") auswählen
+- Registrierkarte "Advanced" (oder "Erweitert") auswählen
+- Environment Variables (oder "Umgebungsvariablen") klicken
+- "Path" - Variable suchen und "Edit" (oder "Bearbeiten") klicken
+- Systemvariablen (unteres Feld) editieren wie folgt: 
+
+C:\Program Files (x86)\Graphviz2.3x\bin
+x ist die aktuelle Version von GraphViz, momentan x=8
+(Also das Verzeichnis in das GraphViz installiert wurde, genauer: das Verzeichnis in dem sich dot.exe befindet)
+
+VOR allen MATHLAB-enthaltenden Pfaden einfuegen!
+
+4)	
+Kontrolle ob erfolgreich:
+Ein NEUES Command Line Prompt starten, und wieder "dot -V" eingeben. 
+Wird nun die aktuelle Version von http://www.graphviz.org  angezeigt, ist die Installation erfolgreich verlaufen.
